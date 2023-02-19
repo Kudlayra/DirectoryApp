@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingEnd="10dp">
+
+    <TextView
+        android:id="@+id/tvStart"
+        style="@style/mainBlackText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="@string/start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvStartTimeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="00.00.0000 00.00.00"
+        android:textColor="@color/grey"
+        app:layout_constraintBottom_toBottomOf="@+id/tvStart"
+        app:layout_constraintEnd_toStartOf="@+id/firstArrow"
+        app:layout_constraintTop_toTopOf="@+id/tvStart" />
+
+    <ImageView
+        android:id="@+id/firstArrow"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/tvStartTimeValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvStartTimeValue" />
+
+    <TextView
+        android:id="@+id/tvEnd"
+        style="@style/mainBlackText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="@string/end"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvStart" />
+
+    <TextView
+        android:id="@+id/tvEndTimeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="00.00.0000 00.00.00"
+        android:textColor="@color/grey"
+        app:layout_constraintBottom_toBottomOf="@+id/tvEnd"
+        app:layout_constraintEnd_toStartOf="@+id/secondArrow"
+        app:layout_constraintTop_toTopOf="@+id/tvEnd" />
+
+    <ImageView
+        android:id="@+id/secondArrow"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/tvEndTimeValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvEndTimeValue" />
+
+    <TextView
+        android:id="@+id/tvDuration"
+        style="@style/mainBlackText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="@string/duration"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvEnd" />
+
+    <TextView
+        android:id="@+id/tvDurationTimeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="00.00.00"
+        android:textColor="@color/grey"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDuration"
+        app:layout_constraintEnd_toEndOf="@+id/tvEndTimeValue"
+        app:layout_constraintTop_toTopOf="@+id/tvDuration" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
